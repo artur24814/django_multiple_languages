@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-04 12:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: languages/texts_for_page.py:10
+msgid "Language"
+msgstr ""
+
+#: languages/texts_for_page.py:13
+msgid "Home"
+msgstr ""
+
+#: languages/texts_for_page.py:17
+msgid "Warsaw"
+msgstr ""
+
+#: languages/texts_for_page.py:20
+msgid "Warsaw officially the Capital City of Warsaw"
+msgstr ""
+
+#: languages/texts_for_page.py:23
+msgid ""
+"\n"
+"Is the capital and largest city of Poland. The metropolis stands on the "
+"River Vistula in east-central Poland,\n"
+"and its population is officially estimated at 1.8 million residents within a "
+"greater metropolitan area of 3.1 million residents,\n"
+"which makes Warsaw the 7th most-populous capital city in the European "
+"Union.\n"
+"The city area measures 517 km2 (200 sq mi) and comprises 18 quarters, while "
+"the metropolitan area covers 6,100 km2 (2,355 sq mi).\n"
+"Warsaw is an Alpha global city,[7] a major cultural, political and economic "
+"hub, and the country's seat of government.\n"
+msgstr ""
+
+#: languages/texts_for_page.py:32
+msgid ""
+"\n"
+"Warsaw traces its origins to a small fishing town in Masovia.\n"
+"The city rose to prominence in the late 16th century,\n"
+"when Sigismund III decided to move the Polish capital and his royal court "
+"from Kraków.\n"
+"Warsaw served as the de facto capital of the Polish–Lithuanian Commonwealth "
+"until 1795, and subsequently as the seat of Napoleon's Duchy of Warsaw.\n"
+"The 19th century and its Industrial Revolution brought a demographic boom "
+"which made it one of the largest and most densely-populated cities in "
+"Europe.\n"
+"Known then for its elegant architecture and boulevards, Warsaw was bombed "
+"and besieged at the start of World War II in 1939.\n"
+"Much of the historic city was destroyed and its diverse population decimated "
+"by the Ghetto Uprising in 1943, the general Warsaw Uprising in 1944 and "
+"systematic razing.\n"
+msgstr ""
+
+#: languages/texts_for_page.py:43
+msgid "copied from"
+msgstr ""
+
+#: mainapp/settings.py:126
+msgid "English"
+msgstr ""
+
+#: mainapp/settings.py:127
+msgid "Polish"
+msgstr ""

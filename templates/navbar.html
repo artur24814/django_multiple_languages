@@ -1,0 +1,50 @@
+{% load i18n %}
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="https://rzeczo.pl/wp-content/uploads/2016/01/Wikipedia-logo-v2.svg_.png" width="50" height="50"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/"> {% translate texts.1 %}</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             {% translate texts.0 %}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {% get_available_languages as languages %}
+              {% for lang_code, lang_name in languages %}
+              {% if lang_code == 'en' %}
+              <li><a class="dropdown-item" href="/">{{ lang_name }}</a></li>
+              {% else %}
+            <li><a class="dropdown-item" href="/{{ lang_code }}">{{ lang_name }}</a></li>
+              {% endif %}
+              {% endfor %}
+          </ul>
+        </li>
+      </ul>
+
+<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+            </option>
+        {% endfor %}
+    </select>
+    <input class="btn btn-outline-success" type="submit" value="Ok">
+</form>
+<!--      <form class="d-flex">-->
+<!--        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
+<!--      </form>-->
+    </div>
+  </div>
+</nav>

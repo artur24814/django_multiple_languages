@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %} {% translate texts.1 %}{% endblock %}
+
+{% block content %}
+<div class="card text-center">
+  <div class="card-header">
+    {% translate texts.2 %}
+  </div>
+  <div class="card-body">
+    <h1 class="card-title"> {% translate texts.3 %} <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Logo_of_Warsaw.svg/84px-Logo_of_Warsaw.svg.png"></h1>
+    <p class="card-text">
+        {% translate texts.4 %}
+    </p>
+      <p class="card-text">
+         {% translate texts.5 %}
+      </p>
+  </div>
+  <div class="card-footer text-muted">
+    copied from <a href="https://en.wikipedia.org/wiki/Warsaw">wikipedia</a>
+  </div>
+</div>
+{% endblock %}
