@@ -3,7 +3,7 @@
 <h2>Contents</h2>
 <ul>
    <h3><a href="#info"><strong>Info</strong></a></h3><p>Information about the resources used in this project</p>
-   <h3><a href="#django_multiple_languages"><strong>AUTOMANIA</strong></a></h3><p>Website for booking screenings at the cinema</p>
+   <h3><a href="#django_multiple_languages"><strong>Django multiple languages</strong></a></h3><p>Website for booking screenings at the cinema</p>
    <h3><a href="#clone_project"><strong>Clone and Run a Django Project</strong></a></h3><p>how run projects in your computer</p>
 </ul>
 <hr>
