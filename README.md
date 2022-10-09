@@ -149,11 +149,11 @@ context = {
 {% load i18n %}
 
 <nav>
-  <div>{% trans 'Language' %}</div>
+  <div>{% translate 'Language' %}</div>
 </nav>
 
-  <h1>{% trans 'card_header' %}</h1>
-  <p>{% trans 'card_title' %}</p>
+  <h1>{% translate 'card_header' %}</h1>
+  <p>{% translate 'card_title' %}</p>
 
 ```
 
